@@ -1,22 +1,19 @@
 set $mod Mod4
-set $TERMINAL sakura
 
 font pango:Bitstream Vera Sans Mono 9
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal
-#bindsym $mod+Return exec i3-sensible-terminal
-#bindsym $mod+Return exec sakura
-bindsym $mod+Return exec gnome-terminal
-
 # kill focused window
 bindsym $mod+Shift+q kill
 
+# Terminal emulator
+bindsym $mod+Return exec i3-sensible-terminal
+
 # start dmenu (a program launcher)
-bindsym $mod+Shift+d exec dmenu_run -fn "Bitstream Vera Sans Mono-9"
-bindsym $mod+d exec i3-dmenu-desktop
+bindsym $mod+d       exec i3-dmenu-desktop --dmenu='dmenu -i -fn "Bitstream Vera Sans Mono-9"'
+bindsym $mod+Shift+d exec dmenu_run -i -fn "Bitstream Vera Sans Mono-9"
 
 # change focus
 bindsym $mod+j focus left
@@ -94,18 +91,17 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-#bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut.' -b 'Exit i3' 'i3-msg exit' -b 'Reboot machine' 'systemctl reboot' -b 'Shutdown machine' 'systemctl poweroff' -f 'pango:Bitstream Vera Sans Mono 12'"
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut.' -b 'Exit i3' 'i3-msg exit' -b 'Reboot machine' 'systemctl reboot' -b 'Shutdown machine' 'systemctl poweroff' -f 'pango:Bitstream Vera Sans Mono 9'"
 
 # Brightness
 bindsym XF86MonBrightnessDown exec xbacklight -5
 bindsym XF86MonBrightnessUp   exec xbacklight +5
-bindsym Mod1+r exec nautilus
+bindsym Mod1+r exec spacefm
 
 # Sound volume
 set $sink `pactl list short sinks | grep RUNNING | cut -f1`
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume $sink +10%
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume $sink -10%
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume $sink +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume $sink -5%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute $sink toggle
 
 # Lock screen

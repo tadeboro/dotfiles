@@ -7,7 +7,7 @@ filetype plugin on
 filetype indent on
 syntax on
 set modeline
-set guifont=Droid\ Sans\ Mono\ 9
+set guifont=Bitstream\ Vera\ Sans\ Mono\ 9
 set guioptions-=m
 set guioptions-=T
 set nocompatible
