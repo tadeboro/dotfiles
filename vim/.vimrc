@@ -3,6 +3,7 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 
 " Common settings
+set nocompatible
 filetype plugin on
 filetype indent on
 syntax on
@@ -18,7 +19,8 @@ set sw=2
 set ts=8
 set sts=8
 set expandtab
-set textwidth=72
+set textwidth=78
+set colorcolumn=79
 
 " Make vim's shell behave like interactive bash
 set shellcmdflag=-ic
