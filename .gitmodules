@@ -19,3 +19,9 @@
 [submodule "vim/.vim/bundle/vim-octave"]
 	path = vim/.vim/bundle/vim-octave
 	url = https://github.com/jvirtanen/vim-octave.git
+[submodule "vim/.vim/bundle/tabular"]
+	path = vim/.vim/bundle/tabular
+	url = git://github.com/godlygeek/tabular.git
+[submodule "vim/.vim/bundle/vim-markdown"]
+	path = vim/.vim/bundle/vim-markdown
+	url = https://github.com/plasticboy/vim-markdown.git
