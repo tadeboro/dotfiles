@@ -25,3 +25,6 @@
 [submodule "vim/.vim/bundle/vim-markdown"]
 	path = vim/.vim/bundle/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
+[submodule "vim/.vim/bundle/vim-gnu-c"]
+	path = vim/.vim/bundle/vim-gnu-c
+	url = https://github.com/ravishi/vim-gnu-c.git
