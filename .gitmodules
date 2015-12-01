@@ -28,3 +28,6 @@
 [submodule "vim/.vim/bundle/vim-gnu-c"]
 	path = vim/.vim/bundle/vim-gnu-c
 	url = https://github.com/ravishi/vim-gnu-c.git
+[submodule "vim/.vim/bundle/haskell-vim"]
+	path = vim/.vim/bundle/haskell-vim
+	url = git@github.com:neovimhaskell/haskell-vim.git
