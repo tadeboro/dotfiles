@@ -1,9 +1,8 @@
-[user]
-	name = Tadej Borovšak
-	email = tadej.borovsak@xlab.si
 [core]
 	editor = vim
         whitespace = trailing-space,space-before-tab
+[apply]
+	whitespace = fix
 [push]
 	default = simple
 [merge]
@@ -12,3 +11,10 @@
 	wdiff = diff --color-words
 [fetch]
 	prune = true
+[color]
+	ui = auto
+
+# Include identity file (this makes it possible to specify different user for
+# different machines)
+[include]
+        path = .config/git/identity
