@@ -44,3 +44,4 @@ Xft.rgba:       rgb
 URxvt.font:             xft:Bitstream Vera Sans Mono:size=9
 URxvt.scrollBar:        false
 URxvt.xftAntialias:     true
+URxvt.saveLines:        10000
