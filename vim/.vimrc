@@ -35,3 +35,9 @@ let g:ctrlp_cmd = 'CtrlPMixed'
 " Markdown settings
 let g:vim_markdown_folding_disabled=1
 let g:vim_markdown_math=1
+
+" Tabularize custom commands
+if exists(":Tabularize")
+  nmap <Leader>a: :Tabularize /^[^:]*:\zs/l0c1l0<CR>
+  vmap <Leader>a: :Tabularize /^[^:]*:\zs/l0c1l0<CR>
+endif
