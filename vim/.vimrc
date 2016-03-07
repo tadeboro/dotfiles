@@ -41,3 +41,8 @@ if exists(":Tabularize")
   nmap <Leader>a: :Tabularize /^[^:]*:\zs/l0c1l0<CR>
   vmap <Leader>a: :Tabularize /^[^:]*:\zs/l0c1l0<CR>
 endif
+
+" Spell checking
+nmap <F12> :set spell spelllang=en<CR>
+nmap <F11> :set spell spelllang=sl<CR>
+nmap <F10> :set nospell<CR>
