@@ -13,6 +13,8 @@
 	prune = true
 [color]
 	ui = auto
+[diff]
+  renames = copy
 
 # Include identity file (this makes it possible to specify different user for
 # different machines)
