@@ -27,7 +27,7 @@ set shellcmdflag=-ic
 
 " Color scheme settings
 set background=dark
-colo base16-tomorrow
+colo eink
 
 " ctrlp settings
 let g:ctrlp_cmd = 'CtrlPMixed'

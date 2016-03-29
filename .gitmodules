@@ -31,3 +31,6 @@
 [submodule "vim/.vim/bundle/haskell-vim"]
 	path = vim/.vim/bundle/haskell-vim
 	url = git@github.com:neovimhaskell/haskell-vim.git
+[submodule "vim/.vim/bundle/eink.vim"]
+	path = vim/.vim/bundle/eink.vim
+	url = https://bitbucket.org/kisom/eink.vim.git
