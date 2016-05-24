@@ -1,22 +1,23 @@
 [core]
-	editor = vim
-        whitespace = trailing-space,space-before-tab
+  editor = vim
+  whitespace = trailing-space,space-before-tab
 [apply]
-	whitespace = fix
+  whitespace = fix
 [push]
-	default = simple
+  default = simple
 [merge]
-	tool = gvimdiff
+  tool = gvimdiff
 [alias]
-	wdiff = diff --color-words
+  wdiff = diff --color-words
+  graph = log --graph --all --pretty=format:'%Cblue%h%Creset %s %Cgreen%d%Creset'
 [fetch]
-	prune = true
+  prune = true
 [color]
-	ui = auto
+  ui = auto
 [diff]
   renames = copy
 
 # Include identity file (this makes it possible to specify different user for
 # different machines)
 [include]
-        path = .config/git/identity
+  path = .config/git/identity
